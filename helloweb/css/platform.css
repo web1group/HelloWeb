@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*---body---*/
+.content {
+	height:50em;
+	margin-top:70px;
+}
+.contact{
+	background-color:#f1f1f1;}
+	
+	
+
+	
+/*---End-body---*/
+.booktable {
+	margin: 10px;
+	border: 1px solid #000;
+	height: 500px;
+	width: 700px;
+}
+.booktable tr td{
+	background-color: #F1f1f1;
+	height: 180px;
+	width: 200px;
+}
+.booktable tr td img {
+	height: 150px;
+	width: 200px;
+}
+.booktable tr td .bookName {
+	text-align: center;
+	margin: 10px;
+}
+.bookunit img {
+	height: 150px;
+	width: 200px;
+}
