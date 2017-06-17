@@ -65,7 +65,11 @@ header{
 }
 /*---End-header---*/
 
-
+.content {
+	height:50em;
+	margin-top:65px;
+	//border:solid 2px red;
+}
 
 /*----footer----*/
 footer{
