@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>index</title>
+<link type="text/css" rel="stylesheet" href="css/mycss1.css" />
+<link type="text/css" rel="stylesheet" href="css/homecss.css" />
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <nav class="top-nav">
+            <ul>
+                <li><a href="" id="navlia">Home</a></li>
+                <li><a href="" id="navlia">About</a></li>
+                <li><a href="" id="navlia">Category</a></li>
+                <li><a href="" id="navlia">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="contact">
+        	<div class="header" >
+				<h1>登录</h1>
+			</div>
+            
+    		<form>
+				<p>
+                	用户名:
+               		<i class="auth_icon auth_icon_user"></i>
+                	<input id="username" name="username" placeholder="用户名" class="auth_input" type="text" value="" style="height:35px;width:200px"/>
+                	<span id="usernameError" style="display:none;" class="auth_error">请输入用户名</span>
+                   
+            	</p>
+            	<p>
+                	密码: 
+                	<i class="auth_icon auth_icon_pwd"></i>
+             		<input id="password" name="password" placeholder="密码" class="auth_input" type="password" value="" autocomplete="off" style="height:35px;width:200px"/>
+                	<span id="passwordError" style="display:none;" class="auth_error">请输入密码</span>
+            	</p>
+            	<p>
+                	<button type="submit" class="auth_login_btn primary full_width">登录
+                	</button>
+                	<button type="submit" class="auth_login_btn primary full_width">注册
+                	</button>
+            	</p>
+            	<a id="getBackPasswordMainPage" href="getBackPasswordMainPage.do" class="auth_login_forgetp">
+                	<small>忘记密码？</small>
+            	</a>
+				
+			</form>
+        </div>
+    </div>
+	
+	<p></p>
+	
+    <footer>
+        <p>Copyright © 2016.Company name All rights reserved.</p>
+    </footer>
+</div>
+</body>
+</html>
