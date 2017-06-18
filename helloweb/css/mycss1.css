@@ -106,4 +106,10 @@ footer p a{
 }
 footer p a:hover{
 	color:#fff;
+}header .top-nav span {
+	font-family: Calibri;
+	font-size: 36px;
+	font-style: italic;
+	font-weight: bold;
+	margin: 10px;
 }
