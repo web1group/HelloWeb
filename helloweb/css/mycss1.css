@@ -12,7 +12,8 @@ a:link{color:#009;}
 a:visited{color:#800080;} 
 a:hover,a:active,a:focus{color:#c00;text-decoration:underline;} 
 
-
+.content{
+	height:700px;}
 
 .container{
 	background-color:#f6f6f6;
