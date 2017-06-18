@@ -3,33 +3,91 @@
 
 
 /*---body---*/
-.contact{
-	background-color:#f1f1f1;}
+.bookshow{
+	//border: 1px solid black;
+	margin-top: 30px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	}
 	
-	
-
-	
-/*---End-body---*/
 .booktable {
 	margin: 10px;
-	border: 1px solid #000;
+	//border: 1px solid #000;
 	height: 500px;
-	width: 700px;
+	width:60%;
 }
 .booktable tr td{
-	background-color: #F1f1f1;
-	height: 180px;
+	height: 250px;
+	width: 250px;
+	padding:10px;
+	border:3px solid  #F1f1f1;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+}
+
+
+.booktable tr td:hover{
+	transform: scale(1.1,1.1);
+	border:3px solid  #e8543f;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+}
+
+.booktable tr td a{
+	text-decoration:none;
+	color:black;
+}
+.booktable tr td a:hover{
+	text-decoration:none;
+	color:red;
+}
+.booktable tr td a:visited{
+	//color:yellow;
+}
+
+
+.booktable tr td a img {
+	height: 200px;
 	width: 200px;
 }
-.booktable tr td img {
-	height: 150px;
-	width: 200px;
-}
-.booktable tr td .bookName {
+.booktable tr td a .bookName {
 	text-align: center;
 	margin: 10px;
+	padding:10px;
+	font-family: "楷体", "宋体", "微软雅黑";
+	font-size: 16px;
+	//color:black;
 }
-.bookunit img {
-	height: 150px;
-	width: 200px;
+
+.find {
+	margin-top: 20px;
+	margin-right: 20%;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	padding-top: 30px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
 }
+.find form {
+	font-family: "宋体";
+	font-size: 16px;
+	font-weight: bold;
+	color: #F00;
+}
+
+.find form #letter{
+	width:20em;
+	height:2em;
+	}
+.find form #sure{
+	height:2em;
+	}
+.find form #sure:hover{
+	box-shadow:0 0 5px #CCC;
+	transform:scale(1.05,1.05);
+	}
+	
