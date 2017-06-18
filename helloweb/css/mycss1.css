@@ -107,3 +107,9 @@ footer p a{
 footer p a:hover{
 	color:#fff;
 }
+header #indexhead {
+	font-family: "楷体", "宋体", "微软雅黑";
+	font-size: 36px;
+	font-style: italic;
+	font-weight: bold;
+}
