@@ -3,7 +3,26 @@
 	
 .meun{
 	background-color:#DC3D25;
+	font-size:20px;
 	height:590px;
 	width:200px;
 	float:left;
 }	
+
+.word{
+	font-size:20px;
+}
+.demo{
+	margin:10px;
+	width:200px;
+	height:200px;
+}  
+.demo:hover{
+	background:图片 no-repeat;
+	border:1px red solid;
+}  
+.demo:hover{
+	width:200px;
+	height:200px;
+	border:2px solid #D94600;
+} 
