@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+h1{margin:2.5cm;padding:0;border:0;}
+
+
+.content{
+<<<<<<< HEAD
+<<<<<<< HEAD
+	height:50em;
+=======
+>>>>>>> origin/master
+=======
+>>>>>>> origin/master
+	margin:0;
+	width:100%;
+	background-image:url(../images/timg.jpg);
+}
+
+.contact *:focus{outline :none;}
+
+.contact{
+	width: 700px;
+	height: auto;
+	background: #f6f6f6;
+	margin:40px auto;
+	padding: 10px;
+	background-image:url(../images/timg.jpg);
+	background-position:top right;
+}
+
+.contact li{
+	border-bottom: 1px solid #dfdfdf;
+	list-style: none;
+	padding: 12px;
+}
+
+.contact li label{
+	width: 120px;
+	display: inline-block;
+	float: left;
+}
+
+.contact li input[type=text],.contact ul li input[type=password]{
+	width: 220px;
+	height: 25px;
+	border :1px solid #aaa;
+	padding: 3px 8px;
+	border-radius: 5px;
+}
+.contact li input:focus{
+	border-color: #c00;
+}
+.contact li input[type=text]{
+	transition: padding .25s;
+	-o-transition: padding  .25s;
+	-moz-transition: padding  .25s;
+	-webkit-transition: padding  .25s;
+}
+.contact li input[type=password]{
+	transition: padding  .25s;
+	-o-transition: padding  .25s;
+	-moz-transition: padding  .25s;
+	-webkit-transition: padding  .25s;
+}
+.contact li input:focus{
+	padding-right: 70px;
+}
+
+.btn{
+	position: relative;
+	left: 200px;
+}
+
+.auth_input{
+	color: rgba(0, 0, 0, 0.5);
+	padding-left: 10px;
+}
+.auth_input_true,.auth_input_false{
+	padding-left: 10px;
+}
+.auth_input_true{
+	color: green;
+}
+.auth_input_false{
+	color: red;
+<<<<<<< HEAD
+<<<<<<< HEAD
+}
+
+#group {
+	font-family: Calibri;
+	font-style: oblique;
+	font-weight: bold;
+	margin: 0px;
+	padding: 10px;
+	font-size: 36px;
+}
+=======
+}
+>>>>>>> origin/master
+=======
+}
+>>>>>>> origin/master
