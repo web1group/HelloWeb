@@ -4,13 +4,7 @@
 h1{margin:3em;padding:0;border:0;}
 
 .content{
-<<<<<<< HEAD
-<<<<<<< HEAD
 	height:50em;
-=======
->>>>>>> origin/master
-=======
->>>>>>> origin/master
 	margin:0;
 	width:100%;
 	background-image:url(../images/timg.jpg);
@@ -89,8 +83,6 @@ h1{margin:3em;padding:0;border:0;}
 }
 .auth_input_false{
 	color: red;
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
 
 #group {
@@ -100,8 +92,4 @@ h1{margin:3em;padding:0;border:0;}
 	margin: 0px;
 	padding: 10px;
 	font-size: 36px;
-=======
->>>>>>> origin/master
-=======
->>>>>>> origin/master
 }
