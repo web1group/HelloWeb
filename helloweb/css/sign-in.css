@@ -4,6 +4,7 @@ h1{margin:2.5cm;padding:0;border:0;}
 
 
 .content{
+	height:50em;
 	margin:0;
 	width:100%;
 	background-image:url(../images/timg.jpg);
@@ -76,4 +77,13 @@ h1{margin:2.5cm;padding:0;border:0;}
 }
 .auth_input_false{
 	color: red;
+}
+
+#group {
+	font-family: Calibri;
+	font-style: oblique;
+	font-weight: bold;
+	margin: 0px;
+	padding: 10px;
+	font-size: 36px;
 }

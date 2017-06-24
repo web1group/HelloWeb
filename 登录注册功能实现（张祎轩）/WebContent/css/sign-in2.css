@@ -1,10 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
+h1{margin:2.5cm;padding:0;border:0;}
 
-h1{margin:3em;padding:0;border:0;}
 
 .content{
-	height:50em;
 	margin:0;
 	width:100%;
 	background-image:url(../images/timg.jpg);
@@ -13,19 +12,13 @@ h1{margin:3em;padding:0;border:0;}
 .contact *:focus{outline :none;}
 
 .contact{
-	/*margin-top:5em;
-	margin-left:19cm;
-	margin-right:5cm;
-	text-align:right;
-	background-image:url(../images/timg.jpg);*/
-	width: 400px;
+	width: 700px;
 	height: auto;
 	background: #f6f6f6;
-	margin-left:19cm;
-	margin-right:5cm;
+	margin:40px auto;
 	padding: 10px;
 	background-image:url(../images/timg.jpg);
-	background-position:bottom right;
+	background-position:top right;
 }
 
 .contact li{
@@ -35,12 +28,12 @@ h1{margin:3em;padding:0;border:0;}
 }
 
 .contact li label{
-	width: 80px;
+	width: 120px;
 	display: inline-block;
 	float: left;
 }
 
-.contact li input[type=text],.contact li input[type=password]{
+.contact li input[type=text],.contact ul li input[type=password]{
 	width: 220px;
 	height: 25px;
 	border :1px solid #aaa;
@@ -68,7 +61,7 @@ h1{margin:3em;padding:0;border:0;}
 
 .btn{
 	position: relative;
-	left:100px;
+	left: 200px;
 }
 
 .auth_input{
@@ -83,13 +76,4 @@ h1{margin:3em;padding:0;border:0;}
 }
 .auth_input_false{
 	color: red;
-}
-
-#group {
-	font-family: Calibri;
-	font-style: oblique;
-	font-weight: bold;
-	margin: 0px;
-	padding: 10px;
-	font-size: 36px;
 }
