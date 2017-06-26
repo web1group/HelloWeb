@@ -1,10 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
-
-.content{
-	height:600px;}	
+	
 .meun{
-	padding:20px;
 	background-color:#DC3D25;
 	font-size:20px;
 	height:590px;
@@ -29,3 +26,9 @@
 	height:200px;
 	border:2px solid #D94600;
 } 
+.head{
+    border:100px;
+    position:absoulte;
+    left:300px;
+    top:200px;
+}
