@@ -11,10 +11,10 @@
 			na=a.username.value;
 		  	if( na.length <6 || na.length >16)  
 	  		{  	
-	  			userame.innerHTML='<font class="auth_input_false">长度是6~16个字符</font>';
+	  			divname.innerHTML='<font class="auth_input_false">长度是6~16个字符</font>';
 	  		     
 	  		}else{  
-	  		    username.innerHTML='<font class="auth_input_true">输入正确</font>';
+	  		    divname.innerHTML='<font class="auth_input_true">输入正确</font>';
 	  		   
 	  		}  
 	  	
@@ -26,7 +26,7 @@
 			var flagSZ=false ; 
 			var flagQT=false ;
 			if(psd1.length<6 || psd1.length>12){   
-				password.innerHTML='<font class="auth_input_false">长度错误</font>';
+				divpassword.innerHTML='<font class="auth_input_false">长度错误</font>';
 			}else
 				{   
 				  for(i=0;i < psd1.length;i++)   
@@ -44,11 +44,11 @@
 						}   
 					}   
 					if(!flagZM||!flagSZ||flagQT){
-					password.innerHTML='<font class="auth_input_false">密码必须是字母数字的组合</font>'; 
+					divpassword.innerHTML='<font class="auth_input_false">密码必须是字母数字的组合</font>'; 
 					 
 					}else{
 						
-					password.innerHTML='<font class="auth_input_true">输入正确</font>';
+					divpassword.innerHTML='<font class="auth_input_true">输入正确</font>';
 					 
 					}  
 				 
@@ -57,9 +57,9 @@
 		//验证确认密码 
 		function checkpsd2(){ 
 				if(a.repassword.value!=a.password.value) { 
-				     repassword.innerHTML='<font class="auth_input_false">您两次输入的密码不一样</font>';
+				     divrepassword.innerHTML='<font class="auth_input_false">您两次输入的密码不一样</font>';
 				} else { 
-				     repassword.innerHTML='<font class="auth_input_true">输入正确</font>';
+				     divrepassword.innerHTML='<font class="auth_input_true">输入正确</font>';
 				}
 		}
 </script>
@@ -70,9 +70,9 @@
 <div class="container">
     <header>
         <nav class="top-nav">
-            <div id="group">
-            HelloWeb
-            </div>
+            <ul>
+                <li><a href="" id="navlia">HelloWeb</a></li>
+            </ul>
         </nav>
     </header>
     <div class="content">
@@ -84,7 +84,7 @@
 			<form name=a method="post">	
 					<li>
                     	<label>用户名：</label>
-						<input id="username" name="username" placeholder="6-16个字符" onblur="checkna()" class="auth_input" type="text" value="" style="height:35px;width:200px"/>
+						<input id="username" name="username" placeholder="6-16个字符" onblur="checkna()" class="auth_input" type="text" value="" style="height:35px;width:200px"/><span class="tips" id="divname">长度6~16个字符</span>
 
 
 						<a href="#" class="icon ticker"> </a>
@@ -93,14 +93,14 @@
             
 					<li>
                     	<label>密码：</label>
-						<input id="password" name="password" placeholder="6-12个字符" onblur="checkpsd1()" class="auth_input" type="password" value="" autocomplete="off" style="height:35px;width:200px"/>
+						<input id="password" name="password" placeholder="6-12个字符" onblur="checkpsd1()" class="auth_input" type="password" value="" autocomplete="off" style="height:35px;width:200px"/><span class="tips" id="divpassword">密码必须由字母和数字组成</span>
 						<a href="#" class="icon into"> </a>
 						<div class="clear"> </div>
 					</li> 
         
 					<li>
                     	<label>确认密码：</label>
-						<input id="repassword" name="repassword" placeholder="6-12个字符" onblur="checkpsd2()" class="auth_input" type="password" value="" autocomplete="off" style="height:35px;width:200px"/>
+						<input id="repassword" name="repassword" placeholder="6-12个字符" onblur="checkpsd2()" class="auth_input" type="password" value="" autocomplete="off" style="height:35px;width:200px"/><span class="tips" id="divrepassword">两次密码需要相同</span>
 						<a href="#" class="icon into"> </a>
 						<div class="clear"> </div>
 					</li> 
@@ -111,7 +111,7 @@
 						<a href="#" class="icon into"> </a>
 						<div class="clear"> </div>
 					</li> 
-					<b class="btn"><input type="submit" onClick="myFunction()" value="注册">
+					<b class="btn"><input type="submit" onClick="myFunction()" value="注册"></b>
 						<div class="clear"> </div>
             </form>
         </div>

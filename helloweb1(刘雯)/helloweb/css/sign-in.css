@@ -1,0 +1,46 @@
+.register {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: grey;
+}
+.register .top {
+	width: 100%;
+	text-align: center;
+}
+.register .top p:first-of-type{
+	color:white;
+	font-size: 40px;
+	font-weight: 200;
+	line-height: 200px;
+}
+.register .top p:last-of-type{
+	color:white;
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 30px;
+}
+
+.register	.form {
+	width: 30%;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+}
+.register	.form input{
+	margin-bottom: 20px;
+}
+.register	.form .alarm{
+	margin-left: -70%;
+	margin-bottom: 20px;
+	color: darkred;
+}
+.register	.form button{
+	margin:0 auto;
+	width:50%;
+	height: 40px;
+	font-size: 16px;
+	margin-bottom: 10px;
+}

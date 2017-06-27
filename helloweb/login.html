@@ -6,7 +6,13 @@
 <link type="text/css" rel="stylesheet" href="css/login.css" />
 <link type="text/css" rel="stylesheet" href="css/homecss.css" />
 <script type="text/javascript" src="js/ehandler.js"></script>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript">
+	$(document).ready(function() {
+        $("#sign").click(function(){
+			window.open("sign-in.html");
+			});
+    });
 	 function checkna(){
 			na=a.username.value;
 		  	if( na.length <6 || na.length >16)  
@@ -89,7 +95,7 @@
             	<li>
                 	<button type="submit" class="btn">登录
                 	</button>
-                	<button type="submit" class="btn">注册
+                	<button type="submit" id="sign" class="btn">注册
                 	</button>
             	</li>
             	<a id="getBackPasswordMainPage" href="getBackPasswordMainPage.do" class="auth_login_forgetp">

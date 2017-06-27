@@ -6,6 +6,14 @@
 <link type="text/css" rel="stylesheet" href="css/mycss1.css" />
 <link type="text/css" rel="stylesheet" href="css/homecss.css" />
 <link type="text/css" rel="stylesheet" href="css/personal.css" />
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+        $("#submit").click(function(){
+			alert("添加成功");
+			});
+    });
+</script>
 <style type="text/css">
 body,td,th {
 	font-family: SimSun, "宋体", "Arial Narrow";
@@ -21,8 +29,8 @@ body {
     <header>
         <nav class="top-nav">
             <ul>
-                <li><a href="" id="navlia">平台</a></li>
-                <li><a href="" id="navlia">个人中心</a></li>
+                <li><a href="platform.html" id="navlia">平台</a></li>
+                <li><a href="personal.html" id="navlia">个人中心</a></li>
             </ul>
         </nav>
     </header>
@@ -42,21 +50,23 @@ body {
                     </li> <br/>
                     <li><a href="wait.html" target="_self">待借阅<i class="st-chart"></i></a>
                     </li><br />
-                     <li><a href="newpublish.html" target="_self">新发布<i class="st-chart"></i></a>
+                     <li><a href="addbook.html" target="_self">新发布<i class="st-chart"></i></a>
                     </li>    
      </div> 
     <div class="content">
     <div class="head">
        <font size="+1">
        <br />
-        <h2 align="center">新发布内容</h2><br />
+        <h2 align="center">添加图书</h2><br />
+        <form>
         书名：<input type="text" name="text" size="30"/><br /><br />
         请上传书的照片：<input type="file" name="file" /><br /><br />
         简要描述：<textarea name="miaoshu" rows="5" cols="40">
         </textarea>
         <br /><br />
-        <input type="submit" name="submit" value="提交表单"/>&nbsp;
-        <input type="reset" name="reset" value="重置按钮"/>
+            <input type="submit" name="submit" id="submit" value="提交表单"/>&nbsp;
+            <input type="reset" name="reset" id="reset" value="重置按钮"/>
+        </form>
       </font>
       </div>
   </div>

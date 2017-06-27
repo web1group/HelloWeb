@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+.personal .header{
+	height: 150px;
+	line-height: 150px;
+	width: 100%;
+	background-color: grey;
+	position: relative;
+	margin-bottom: 20px;
+}
+.personal .header .left{
+	position: absolute;
+	height: 150px;
+	left: 50px;
+	top:0;
+}
+.personal .header .left ul li{
+	display: inline;
+	font-size: 30px;
+	padding-right: 30px;
+}
+.personal .header .left ul li a{text-decoration:none;font-weight: 200;}
+.personal .header .left ul li a:link{color:white;font-weight: 200;}
+.personal .header .left ul li a:visited{color:white;font-weight: 200;}
+.personal .header .left ul li a:hover{color:white; text-decoration: none;font-weight: 200;}
+.personal .header .left ul li a:active{color:white;font-weight: 200;}
+.meun{
+	float:left;
+}	
+.menu input{
+	height: 10px;
+}
+.content .container{
+	width:70%;
+}
+.content .container .row .box-in{
+	margin:0 auto;
+	width:250px;
+	padding-bottom: 25px;
+	border:2px solid lightgrey;
+	text-align: center;
+	font-size: 25px;
+	font-weight: 200;
+	margin-bottom: 50px;
+	padding-top: 25px;
+	height:320px;
+	border-radius: 5px;
+}
+.content .container .row .box-in:hover{
+	border:2px solid lightblue;
+	font-size: 27px;
+}
+.content .container .row .box-in:hover img{
+	cursor: pointer;
+}
+.content .container .row .box-in img{
+	width: 200px;
+	height: 200px;
+	margin-bottom: 25px;
+}
+footer{
+	margin-top: 150px;
+}
