@@ -1,0 +1,67 @@
+@charset "utf-8";
+.book .inf .telephone p {
+	font-weight: bold;
+	margin: 10px;
+}
+
+/* CSS Document */
+
+.book {
+	width: 1000px;
+	height:500px;
+	//border: solid 1px black;
+	margin-top: 50px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	padding-top: 40px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+}
+.book .image{
+	float: left;
+	//border: solid 1px black;
+	margin: 10px;
+	}
+
+.book .inf{
+	float: left;
+	width: 600px;
+	//border: 1px black solid;
+	margin: 10px;
+	}
+		
+.book .inf .telephone {
+	font-family: "宋体";
+	font-size: 18px;
+	margin: 10px;
+	padding: 5px;
+	//border: 1px solid #000;
+}
+.book .inf .name {
+	font-family: "楷体", "宋体", "微软雅黑";
+	font-size: 36px;
+	//border: 1px black solid;
+	margin: 10px;
+}
+
+.book .instruction {
+	font-family: "楷体", "宋体", "微软雅黑";
+	font-size: 24px;
+	margin: 10px;
+	padding: 10px;
+	//border: 1px solid #000;
+	text-align: left;
+}
+.book .name {
+	font-family: "宋体";
+	font-size: 36px;
+	font-weight: bold;
+	letter-spacing: 2em;
+	margin-bottom: 20px;
+}
+.book .inf .instruction p {
+	font-weight: bold;
+	margin: 10px;
+}
