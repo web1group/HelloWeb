@@ -8,11 +8,6 @@
 	<link type="text/css" rel="stylesheet" href="css/homecss.css" />
 	<script type="text/javascript" src="./js/ehandler.js"></script>
 	<script type="text/javascript">
-	$(document).ready(function() {
-        $("#sign").click(function(){
-			window.open("sign-in.jsp");
-			});
-    });
         function a()  {
 
             var name = document.getElementById("username").value;

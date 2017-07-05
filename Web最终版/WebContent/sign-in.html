@@ -7,16 +7,46 @@
 	<link type="text/css" rel="stylesheet" href="./css/homecss.css" />
 	<script type="text/javascript" src="js/ehandler.js"></script>
 	<script type="text/javascript">
-        function checkna(){
-            na = a.username.value;
-            if( na.length < 6 || na.length >16)
+		 function checkna(){
+            var na=a.username.value;
+            var flagZM=false ;
+            var flagSZ=false ;
+            var flagQT=false ;
+            if(na.length < 6 || na.length > 16){
+               divusername.innerHTML='<font class="auth_input_false">长度是6~16个字符或数字</font>';
+            }else
             {
+                for(i=0;i < na.length;i++)
+                {
+                    if((na.charAt(i) >= 'A' && na.charAt(i) <= 'Z') || (na.charAt(i)>='a' && na.charAt(i)<='z'))
+                    {
+                        flagZM=true;
+                    }
+                    else if(na.charAt(i)>='0' && na.charAt(i) <= '9')
+                    {
+                        flagSZ=true;
+                    }else
+                    {
+                        flagQT=true;
+                    }
+                }
+                if(!flagZM||!flagSZ||flagQT){
+                   divusername.innerHTML='<font class="auth_input_false">用户名只能是是字母或者数字的组合</font>';
 
-                divusername.innerHTML='<font class="auth_input_false">长度是6~16个字符</font>';
+                }else{
 
-            }else{
-                divusername.innerHTML='<font class="auth_input_true">输入正确</font>';
+                   divusername.innerHTML='<font class="auth_input_true">输入正确</font>';
 
+                }
+
+            }
+        }
+        //验证确认密码
+        function checkpsd2(){
+            if(a.repassword.value != a.password.value) {
+                divrepassword.innerHTML="<font class=\"auth_input_false\">您两次输入的密码不一样</font>";
+            } else {
+                divrepassword.innerHTML='<font class="auth_input_true">输入正确</font>';
             }
         }
         //验证密码
@@ -56,12 +86,24 @@
         }
         //验证确认密码
         function checkpsd2(){
-            if(a.repassword.value !== a.password.value) {
+            if(a.repassword.value != a.password.value) {
                 divrepassword.innerHTML="<font class=\"auth_input_false\">您两次输入的密码不一样</font>";
             } else {
                 divrepassword.innerHTML='<font class="auth_input_true">输入正确</font>';
             }
         }
+		
+		//验证电话号码格式
+		function checkMobile(){
+			var s = a.telNumber.value;
+			var regu =/^[1][3][0-9]{9}$/; 
+			var re = new RegExp(regu); 
+			if (re.test(s)) { 
+				divtelephone.innerHTML="<font class=\"auth_input_true\">输入正确</font>"
+			}else{ 
+				divtelephone.innerHTML="<font class=\"auth_input_false\">请输入正确的电话号码</font>"
+			} 
+		} 
 	</script>
 
 </head>
@@ -105,9 +147,9 @@
 
 				<li>
 					<label>手机</label>
-					<input id="telNumber" name="telNumber" placeholder="请输入手机号"  class="auth_input" type="tel" value="" autocomplete="off" style="height:35px;width:200px"/>
+					<input id="telNumber" name="telNumber" placeholder="请输入手机号"  required onblur="checkMobile()"   class="auth_input" type="tel" value="" autocomplete="off" style="height:35px;width:200px"/>
 					<a href="#" class="icon into"> </a>
-					<div class="clear"> </div>
+					<div class="clear" id="divtelephone"> </div>
 				</li>
 
 				<b class="btn"><input type="submit" onClick="myFunction()" value="注册">

@@ -87,3 +87,10 @@ h1{margin:2.5cm;padding:0;border:0;}
 	padding: 10px;
 	font-size: 36px;
 }
+
+li div{
+	padding-left:300px;}
+
+li label{
+	font-size:18px;
+	font-weight:bold}
